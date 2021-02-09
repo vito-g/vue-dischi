@@ -28,6 +28,13 @@ new Vue({
         self.obj = resp.data.response;
         console.log(self.obj);
 
+        self.obj.forEach(function(element) {
+          if (!self.genreArray.includes(element.genre)) {
+            self.genreArray.push(element.genre);
+            console.log(element.genre);
+          }
+        })
+
 
       });
 

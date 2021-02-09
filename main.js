@@ -18,13 +18,6 @@ new Vue({
     activeIndex: 0
   },
 
-  methods: {
-    clickedGenre: function(index) {
-    this.activeIndex = index;
-    console.log(this.activeIndex);
-    }
-  },
-
   mounted() {
     const self = this;
     console.log('ho montato l\'app');

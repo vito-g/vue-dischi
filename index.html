@@ -25,8 +25,9 @@
           <!-- Disco ad esempio -->
           <div v-for="element in obj" class="cd">
             <!-- <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Ten_Summoner%27s_Tales.jpg" alt=""> -->
-            <img :src="obj.poster" alt="">
-            <h3>Ten's Summoners Tales</h3>
+            <img :src="element.poster" alt="">
+            <!-- <h3>Ten's Summoners Tales</h3> -->
+            <h3>{{}}</h3>
             <span class="author">Sting</span>
             <span class="year">1993</span>
           </div>

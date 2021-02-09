@@ -39,6 +39,12 @@ new Vue({
       });
 
 
+  },
+
+  methods: {
+    filteredObj: function(item) {
+      return item.genre == this.selected || this.selected == 'Please select one';
+    }
   }
 
 })

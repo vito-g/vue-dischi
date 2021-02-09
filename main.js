@@ -12,7 +12,9 @@ https://bitbucket.org/booleancareers/ex-dischi-musicali-layout*/
 new Vue({
   el: '#app',
   data: {
-    obj: ''
+    obj: '',
+    genreArray: [],
+    selected: ''
   },
   mounted() {
     const self = this;
@@ -23,6 +25,7 @@ new Vue({
         console.log('risposta vue', resp.data);
         self.obj = resp.data.response;
         console.log(self.obj);
+
 
       });
 

@@ -19,6 +19,14 @@
           <div class="container">
             <img src="logo.png" alt="logo" />
           </div>
+          <select v-model="selected">
+            <option disabled value="">Please select one</option>
+            <option>Rock</option>
+            <option>Pop</option>
+            <option>Jazz</option>
+            <option>Metal</option>
+          </select>
+          <span>Selected: {{ selected }}</span>
         </header>
 
         <div class="cds-container container">

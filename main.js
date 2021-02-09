@@ -12,19 +12,18 @@ https://bitbucket.org/booleancareers/ex-dischi-musicali-layout*/
 new Vue({
   el: '#app',
   data: {
-    obj: '',
-    objArray: []
+    obj: ''
   },
   mounted() {
     const self = this;
     console.log('ho montato l\'app');
-  
+
       axios.get('https://flynn.boolean.careers/exercises/api/array/music')
       .then(function(resp) {
         console.log('risposta vue', resp.data);
         self.obj = resp.data.response;
-        //Per ogni email generata, riempi l'array "emailList"
-        self.objArray.push(self.obj);
+        console.log(self.obj);
+
       });
 
 

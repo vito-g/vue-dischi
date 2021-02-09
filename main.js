@@ -14,8 +14,17 @@ new Vue({
   data: {
     obj: '',
     genreArray: [],
-    selected: ''
+    selected: '',
+    activeIndex: 0
   },
+
+  methods: {
+    clickedGenre: function(index) {
+    this.activeIndex = index;
+    console.log(this.activeIndex);
+    }
+  },
+
   mounted() {
     const self = this;
     console.log('ho montato l\'app');

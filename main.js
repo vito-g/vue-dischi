@@ -14,8 +14,7 @@ new Vue({
   data: {
     obj: '',
     genreArray: [],
-    selected: '',
-    activeIndex: 0
+    selected: ''
   },
 
   mounted() {
